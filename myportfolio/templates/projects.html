@@ -1,0 +1,41 @@
+{%extends 'layout.html'%}
+
+{% load static %}
+
+{% block content %}
+<div style="margin-top: 7%;" class="container">
+    <a style="color: white;" href="{%url 'index'%}"><figure class="profile-img"></figure></a>
+    </div>
+<body style="background-color:black">
+    
+<section  id="projects" class="projects">
+    <h1 style="color: white;">Projects</h1>
+    <p style="color: white;">“Here are few of my projects done.” </p>
+        <div style="width: 70%; margin-left:15%; background-color:bisque;"  class="project-grid">
+            <div class="project-tile">
+                <img style="width:100%;" src="{%static 'assets/Screen Shot 2022-10-12 at 5.17.44 PM copy.png'%}" alt="Blog"  class="project-image">
+                <a href="https://github.com/shizukane/blog" class="project-link" target="_blank">View</a>
+                <p class="project-description">This is an online platform where a user can write his own blogs, read blogs from other users, comment on blogs as well as maintain their own profiles by deleting personal blog articles or deleting comments on their own blogs.</p>
+            </div>
+            <div class="project-tile">
+                <img style="width:100%;" src="{% static 'assets/Screen Shot 2022-10-12 at 5.09.47 PM.png'%}" alt="Gitweb" class="project-image">
+                <a href="https://github.com/shizukane/gitweb " class="project-link" target="_blank">View</a>
+                <p class="project-description">This is an application that searches github users and their repositories and followers</p>
+            </div>
+            <div class="project-tile">
+                <img style="width:100%;" src="{% static 'assets/Screen Shot 2022-10-12 at 5.11.20 PM.png'%}" alt="Gitweb" class="project-image">
+                <a href="https://github.com/shizukane/quotes-app" class="project-link" target="_blank">View</a>
+                <p class="project-description">this is an application that records quotes written by the user and provides details about the quote written</p>
+            </div>
+            <div class="project-tile">
+                <img style="width:100%;" src="{% static 'assets/Screen Shot 2022-10-12 at 5.38.16 PM.png'%}" alt="Gitweb" class="project-image">
+                <a href="https://github.com/shizukane/projectsapp" class="project-link" target="_blank">View</a>
+                <p class="project-description">This is a Django application that allows users to post there projects so that it can be viewed by others</p>
+            </div>
+            
+         
+        </div>
+    </section>
+</body>
+
+    {% endblock %}

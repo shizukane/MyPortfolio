@@ -1,0 +1,97 @@
+nav{
+  background: black;
+}
+.content{
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons button{
+  box-sizing: border-box;
+  border: 2px solid;
+  color: var(--color);
+  background: none;
+  transition: 0.25s;
+  width: 120px;
+  height: 50px;
+}
+
+.aboutme {
+  --color: #13FE23;
+  --hover: #FFFF0B;
+  width: 70px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.home{
+  --color: #FE13FE;
+  --hover: #13F6FE;
+  width: 70px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.projects{
+  --color: #13F6FE;
+  --hover: #FE13FE;
+  width: 70px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.contact{
+  --color: #FFFF0B;
+  --hover: #13FE23;
+  width: 70px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+body{
+  background: black;
+  color: white;
+  font-size: 80px;
+}
+
+span::before{
+  content:" CREATIVE ";
+  color:#0AFB8B;
+  animation-name: animate;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  display:inline-block;
+  
+  
+}
+  
+@keyframes animate{
+  0% {content:"RELIABLE";}
+  50% { content:"DEVOTED"}
+  100% { content:"CREATIVE"}
+}
+
+h1 {
+  top: 190px;
+  left: 185px;
+  padding: 169px;
+  font-weight:700;
+}
+

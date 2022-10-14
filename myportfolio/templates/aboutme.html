@@ -1,0 +1,36 @@
+{%extends 'layout.html'%}
+
+{% block content %}
+<div style="margin-top: 10%;" class="container">
+<a style="color: white;" href="{%url 'index'%}"><figure class="profile-img"></figure></a>
+</div>
+<section id="about" class="about">
+    <main class="flex">
+        <div class="card">
+          <h2><span class="bottom-border">About Me</span></h2>
+  
+          <p class="text">I love designing things and, Web development has given me a reason 
+            to bring my artistic imagination to life. Building something and keeping 
+            in mind the final product is an immense motivation for me itself.</p>
+          
+  
+        </div> 
+  
+        <div class="card">
+          <h2><span class="bottom-border">Goals</span></h2>
+          <p class="text">I would like to be able to expert in at least one of the technology stack. 
+            Get a nice job with a nice working environment. 
+          </p>
+          <!-- <ul class="skills"> 
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>Rails</li>
+          </ul>-->
+          <p class="text">Also my goals is to further my education after few years of job and build some interesting 
+            applications under my belt to influence market.</p>
+        </div> 
+  
+      </main>
+      {% endblock %}
